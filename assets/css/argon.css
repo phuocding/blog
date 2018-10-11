@@ -8242,7 +8242,7 @@ button.bg-darker:focus
 
 .rounded-circle
 {
-    border-radius: 50% !important;
+    border-radius: 10% !important;
 }
 
 .rounded-0
@@ -17222,7 +17222,7 @@ textarea[resize='horizontal']
 }
 .section-shaped .shape-primary
 {
-    background: linear-gradient(150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 }
 .section-shaped .shape-primary :nth-child(1)
 {
@@ -17246,7 +17246,7 @@ textarea[resize='horizontal']
 }
 .section-shaped .shape-default
 {
-    background: linear-gradient(150deg, #7795f8 15%, #6772e5 70%, #555abf 94%);
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 }
 .section-shaped .shape-default :nth-child(1)
 {
@@ -17358,7 +17358,7 @@ textarea[resize='horizontal']
 .section-shaped .shape-style-1 :nth-child(2)
 {
     top: 10%;
-    right: 4%;
+    right: 20%;
 
     background: rgba(255, 255, 255, .1);
 }
@@ -17440,11 +17440,11 @@ textarea[resize='horizontal']
 }
 .section-shaped .shape-style-1.shape-primary
 {
-    background: linear-gradient(150deg, #281483 15%, #8f6ed5 70%, #d782d9 94%);
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 }
 .section-shaped .shape-style-1.shape-default
 {
-    background: linear-gradient(150deg, #7795f8 15%, #6772e5 70%, #555abf 94%);
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
 }
 .section-shaped .shape-style-1.shape-light
 {
