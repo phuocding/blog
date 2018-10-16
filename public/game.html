@@ -41,8 +41,8 @@
         // "tagID"	add canvas to HTML tag of ID - set to dimensions if provided - no scaling
 
         var scaling = "fit"; // this will resize to fit inside the screen dimensions
-        var width = 1024;
-        var height = 768;
+        var width = 800;
+        var height = 600;
         var countPieces = 0;
         var totalPieces = 0;
         // as of ZIM 5.5.0 you do not need to put zim before ZIM functions and classes
@@ -107,7 +107,7 @@
                 imageObj.pos(puzzleX, puzzleY);
                 // zog(puzzleX,puzzleY);
 
-                label.text = "Chúc mừng ngày ngày phụ nữ Việt Nam" + countPieces + "/" + totalPieces;
+                label.text = "Chúc mừng ngày ngày phụ nữ Việt Nam 20.10 " + countPieces + "/" + totalPieces;
 
 
                 for (j = 0; j < verticalPieces; j++) {
@@ -162,7 +162,7 @@
                                 mc.mouseEnabled = false;
                                 mc.hint.visible = false;
                                 countPieces++;
-                                label.text = "Puzzle " + countPieces + "/" + totalPieces;
+                                label.text = "Chúc mừng ngày ngày phụ nữ Việt Nam 20.10 " + countPieces + "/" + totalPieces;
                                 zog("countPieces", countPieces);
                                 if (countPieces == totalPieces) {
                                     var pane = new Pane({ width: 600, label: "VERY NICE!", height: 250, modal: false, displayClose: false });
@@ -359,8 +359,13 @@
             </div>
         </nav>
     </header>
-    <main class="profile-page" id="tagID">
+    <main class="profile-page">
         <!-- canvas with id="myCanvas" is made by zim Frame -->
+        <section class="section">
+            <div class="container">
+                <canvas id="lotus"></canvas>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container">
@@ -413,11 +418,11 @@
     </footer>
     <!-- Core -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="assets/vendor/popper/popper.min.js"></script>
-    <script src="assets/vendor/headroom/headroom.min.js"></script>
-    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/vendor/popper/popper.min.js"></script>
+    <script src="../assets/vendor/headroom/headroom.min.js"></script>
+    <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
     <!-- Argon JS -->
-    <script src="assets/js/argon.min.js"></script>
+    <script src="../assets/js/argon.min.js"></script>
     <!--Sweet Alert 2-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.all.min.js"></script>
     <script>
