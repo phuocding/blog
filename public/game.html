@@ -8,25 +8,10 @@
     <meta name="description" content="Start your development with a Blog integrated with Portfolio">
     <meta name="author" content="Phuocding">
     <title>Card memory game</title>
-    <link rel="stylesheet" href="../assets/css/game.css">
+    <link rel="stylesheet" href="../assets/css/game.min.css">
     <!-- Favicon -->
     <link href="../assets/img/brand/camcodo.png" rel="icon" type="image/jpg">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <!-- Icons -->
-    <link href="../assets/vendor/nucleo/css/nucleo.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <!-- Argon CSS -->
-    <link type="text/css" href="../assets/css/argon.min.css?v=1.0.1" rel="stylesheet">
-    <!--Sweet Alert 2-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.min.css">
-    <style>
-        @font-face {
-      font-family: myFirstFont;
-      src: url("../assets/font/SansForgetica-Regular.otf");
-    }
-  </style>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 </head>
 
 <body>
@@ -46,224 +31,94 @@ Click the big P to choose one of three levels:
 The game will save your stats locally, via localStorage.
 Click the F to see your stats.
 
-Click I for these intructions.
+Click I for these instructions.
 
 Flip is a timed card memory game. When starting a level, there's a red bar on top of the screen that shows how much time you have left.
 Click the green cards to see what symbol they uncover and try to find the matching symbol underneath the other cards.
 Uncover two matching symbols in a row to eliminate them from the game.
 Eliminate all cards as fast as you can to win the game. Have fun FLIPing!
 -->
-    <header class="header-global">
-        <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
-            <div class="container">
-                <a class="navbar-brand mr-lg-5" href="https://phuocding.github.io" style="font-family: myFirstFont">
-                    <img src="../assets/img/brand/camcodo.png"> Ting Fu
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
-                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="navbar_global">
-                    <div class="navbar-collapse-header">
-                        <div class="row">
-                            <div class="col-6 collapse-brand">
-                                <a href="https://phuocding.github.io">
-                                    <img src="../assets/img/brand/camcodo.png"> Ting Fu
-                                </a>
-                            </div>
-                            <div class="col-6 collapse-close">
-                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
-                                    aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span></span>
-                                    <span></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="" role="button">
-                                <i class="ni ni-button-play"></i>
-                                <span class="nav-link-inner--text">Thư giãn tý</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link btn-dev" href="#" role="button">
-                                <i class="ni ni-trophy"></i>
-                                <span class="nav-link-inner--text">Xôi xéo</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link btn-dev" href="#" role="button">
-                                <i class="ni ni-user-run"></i>
-                                <span class="nav-link-inner--text">Chim cút</span>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link btn-dev" href="#" role="button">
-                                <i class="ni ni-world"></i>
-                                <span class="nav-link-inner--text">About me</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-icon" href="https://plus.google.com/107137651608531099184"
-                                target="_blank" data-toggle="tooltip" title="Discover LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                                <span class="nav-link-inner--text d-lg-none">LinkedIn</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-icon" href="https://www.instagram.com/tingfu.om" target="_blank"
-                                data-toggle="tooltip" title="Follow me on Instagram">
-                                <i class="fab fa-instagram"></i>
-                                <span class="nav-link-inner--text d-lg-none">Instagram</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-icon" href="https://github.com/phuocding/phuocding.github.io"
-                                target="_blank" data-toggle="tooltip" title="Star me on Github">
-                                <i class="fab fa-github"></i>
-                                <span class="nav-link-inner--text d-lg-none">Github</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <main class="game">
-        <div class="container">
-                <div id="g"></div>
+    <!--
+README!
 
-                <div class="logo">
-                    <p class="info">Click the P to get started.</p>
-                    <div class="game-card left">
-                        <div class="flipper">
-                            <div class="f c1">F</div>
-                            <div class="b contentbox" id="stats">
-                                <div class="padded">
-                                    <h2>Figures</h2>
-                                    Looks like you haven't FLIPped yet.
-                                    <a href="javascript:;" class="playnow">Play now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="game-card active twist">
-                        <div class="flipper">
-                            <div class="b f">
-                                <div class="c2">L</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="game-card left">
-                        <div class="flipper">
-                            <div class="f c3">I</div>
-                            <div class="b contentbox instructions">
-                                <div class="padded">
-                                    <h2>Instructions</h2>
-                                    <p>Press [p] to pause, or [ESC] to abandon game.</p>
-                                    <p>Flip is a timed card memory game. Click the green cards to see what
-                                        symbol they uncover
-                                        and
-                                        try to find the matching symbol underneath the other cards.</p>
-                                    <p>Uncover two matching symbols at once to eliminate them from the game.</p>
-                                    <p>Eliminate all cards as fast as you can to win the game. Have fun
-                                        FLIPing!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="game-card">
-                        <div class="flipper">
-                            <div class="f c4">P</div>
-                            <div class="b contentbox levels">
-                                <a href="javascript:;" data-level="8" class="play">Casual</a>
-                                <a href="javascript:;" data-level="18" class="play">Medium</a>
-                                <a href="javascript:;" data-level="32" class="play">Hard</a>
-                            </div>
-                        </div>
-                    </div>
+GAME INSTRUCTIONS:
 
-                    <p class="info">Flip should work best in Google Chrome, decent in Firefox, IE10 and Opera;</p>
-                </div>
-        </div>
-    </main>
+p    - pause
+ESC  - abandon game
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row row-grid align-items-center mb-5">
-                <div class="col-lg-6">
-                    <h4 class="mb-0 font-weight-light" style="font-family: myFirstFont">The man who never made mistakes
-                        never made anything.</h4>
-                </div>
-                <div class="col-lg-6 text-lg-center btn-wrapper">
-                    <a target="_blank" href="https://plus.google.com/107137651608531099184" class="btn btn-neutral btn-icon-only btn-round btn-lg"
-                        data-toggle="tooltip" data-original-title="Discover LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="btn btn-neutral btn-icon-only btn-instagram btn-round btn-lg" href="https://www.instagram.com/tingfu.om"
-                        target="_blank" data-toggle="tooltip" title="Follow me on Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a target="_blank" href="https://github.com/phuocding/phuocding.github.io" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg"
-                        data-toggle="tooltip" data-original-title="Star on Github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-            <hr>
-            <div class="row align-items-center justify-content-md-between">
-                <div class="col-md-6">
-                    <div class="copyright">
-                        &copy; 2018
-                        <a href="https://phuocding.github.io">Ting Fu</a>.
+Click the big P to choose one of three levels:
+- Casual
+- Medium
+- Hard
+
+The game will save your stats locally, via localStorage.
+Click the F to see your stats.
+
+Click I for these instructions.
+
+Flip is a timed card memory game. When starting a level, there's a red bar on top of the screen that shows how much time you have left.
+Click the green cards to see what symbol they uncover and try to find the matching symbol underneath the other cards.
+Uncover two matching symbols in a row to eliminate them from the game.
+Eliminate all cards as fast as you can to win the game. Have fun FLIPing!
+-->
+
+
+    <div id="g"></div>
+
+    <div class="logo">
+        <p class="info">Click the P to get started.</p>
+        <div class="card left">
+            <div class="flipper">
+                <div class="f c1">F</div>
+                <div class="b contentbox" id="stats">
+                    <div class="padded">
+                        <h2>Figures</h2>
+                        Looks like you haven't FLIPped yet.
+                        <a href="javascript:;" class="playnow">Play now</a>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <ul class="nav nav-footer justify-content-end">
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Thư giãn tý</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link btn-dev">Xôi xéo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link btn-dev">Chim cút</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link btn-dev">About me</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="card active twist">
+            <div class="flipper">
+                <div class="b f">
+                    <div class="c2">L</div>
+                </div>
+            </div>
+        </div>
+        <div class="card left">
+            <div class="flipper">
+                <div class="f c3">I</div>
+                <div class="b contentbox instructions">
+                    <div class="padded">
+                        <h2>Instructions</h2>
+                        <p>Press [p] to pause, or [ESC] to abandon game.</p>
+                        <p>Flip is a timed card memory game. Click the green cards to see what symbol they uncover and
+                            try to find the matching symbol underneath the other cards.</p>
+                        <p>Uncover two matching symbols at once to eliminate them from the game.</p>
+                        <p>Eliminate all cards as fast as you can to win the game. Have fun FLIPing!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="flipper">
+                <div class="f c4">P</div>
+                <div class="b contentbox levels">
+                    <a href="javascript:;" data-level="8" class="play">Casual</a>
+                    <a href="javascript:;" data-level="18" class="play">Medium</a>
+                    <a href="javascript:;" data-level="32" class="play">Hard</a>
+                </div>
+            </div>
+        </div>
+
+        <p class="info">Flip should work best in Google Chrome, decent in Firefox, IE10 and Opera;</p>
+    </div>
+
     <!-- Core -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="../assets/vendor/popper/popper.min.js"></script>
-    <script src="../assets/vendor/headroom/headroom.min.js"></script>
-    <script src="../assets/vendor/bootstrap/bootstrap.min.js"></script>
-    <!-- Argon JS -->
-    <script src="../assets/js/argon.min.js"></script>
-    <!--Sweet Alert 2-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.all.min.js"></script>
-    <script>
-        $('.btn-dev').click(function () {
-            swal({
-                position: 'top-end',
-                type: 'info',
-                title: 'Tính năng đang phát triển',
-                showConfirmButton: false,
-                timer: 2000
-            })
-        });
-    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="../assets/js/game.js" type="text/javascript"></script>
+    <script src="../assets/js/game.min.js" type="text/javascript"></script>
 </body>
 
 </html>

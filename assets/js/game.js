@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 	function set(key, value) {
 		localStorage.setItem(key, value);
 	}
@@ -12,7 +12,7 @@ $(function() {
 		set(el, parseInt(get(el)) - 1);
 	}
 
-	var toTime = function(nr) {
+	var toTime = function (nr) {
 		if (nr == "-:-") return nr;
 		else {
 			var n = " " + nr / 1000 + " ";
@@ -23,35 +23,35 @@ $(function() {
 	function updateStats() {
 		$("#stats").html(
 			'<div class="padded"><h2>Figures: <span>' +
-				"<b>" +
-				get("flip_won") +
-				"</b><i>Won</i>" +
-				"<b>" +
-				get("flip_lost") +
-				"</b><i>Lost</i>" +
-				"<b>" +
-				get("flip_abandoned") +
-				"</b><i>Abandoned</i></span></h2>" +
-				"<ul><li><b>Best Casual:</b> <span>" +
-				toTime(get("flip_casual")) +
-				"</span></li>" +
-				"<li><b>Best Medium:</b> <span>" +
-				toTime(get("flip_medium")) +
-				"</span></li>" +
-				"<li><b>Best Hard:</b> <span>" +
-				toTime(get("flip_hard")) +
-				"</span></li></ul>" +
-				"<ul><li><b>Total Flips:</b> <span>" +
-				parseInt(
-					(parseInt(get("flip_matched")) + parseInt(get("flip_wrong"))) * 2
-				) +
-				"</span></li>" +
-				"<li><b>Matched Flips:</b> <span>" +
-				get("flip_matched") +
-				"</span></li>" +
-				"<li><b>Wrong Flips:</b> <span>" +
-				get("flip_wrong") +
-				"</span></li></ul></div>"
+			"<b>" +
+			get("flip_won") +
+			"</b><i>Won</i>" +
+			"<b>" +
+			get("flip_lost") +
+			"</b><i>Lost</i>" +
+			"<b>" +
+			get("flip_abandoned") +
+			"</b><i>Abandoned</i></span></h2>" +
+			"<ul><li><b>Best Casual:</b> <span>" +
+			toTime(get("flip_casual")) +
+			"</span></li>" +
+			"<li><b>Best Medium:</b> <span>" +
+			toTime(get("flip_medium")) +
+			"</span></li>" +
+			"<li><b>Best Hard:</b> <span>" +
+			toTime(get("flip_hard")) +
+			"</span></li></ul>" +
+			"<ul><li><b>Total Flips:</b> <span>" +
+			parseInt(
+				(parseInt(get("flip_matched")) + parseInt(get("flip_wrong"))) * 2
+			) +
+			"</span></li>" +
+			"<li><b>Matched Flips:</b> <span>" +
+			get("flip_matched") +
+			"</span></li>" +
+			"<li><b>Wrong Flips:</b> <span>" +
+			get("flip_wrong") +
+			"</span></li></ul></div>"
 		);
 	}
 
@@ -117,21 +117,21 @@ $(function() {
 	}
 
 	// Toggle start screen cards
-	$('.logo .game-card:not(".twist")').on("click", function(e) {
+	$('.logo .card:not(".twist")').on("click", function (e) {
 		$(this)
 			.toggleClass("active")
 			.siblings()
 			.not(".twist")
 			.removeClass("active");
 		if ($(e.target).is(".playnow")) {
-			$(".logo .game-card")
+			$(".logo .card")
 				.last()
 				.addClass("active");
 		}
 	});
 
 	// Start game
-	$(".play").on("click", function() {
+	$(".play").on("click", function () {
 		increase("flip_abandoned");
 		$(".info").fadeOut();
 
@@ -153,7 +153,7 @@ $(function() {
 
 		$("#g").addClass(difficulty);
 
-		$(".logo").fadeOut(250, function() {
+		$(".logo").fadeOut(250, function () {
 			var startGame = $.now(),
 				obj = [];
 
@@ -172,20 +172,20 @@ $(function() {
 				if (code == 31) code = 21;
 				$(
 					'<div class="card" style="width:' +
-						cardSize +
-						"%;height:" +
-						cardSize +
-						'%;">' +
-						'<div class="flipper"><div class="f"></div><div class="b" data-f="&#xf0' +
-						code +
-						';"></div></div>' +
-						"</div>"
+					cardSize +
+					"%;height:" +
+					cardSize +
+					'%;">' +
+					'<div class="flipper"><div class="f"></div><div class="b" data-f="&#xf0' +
+					code +
+					';"></div></div>' +
+					"</div>"
 				).appendTo("#g");
 			}
 
 			// Set card actions
-			$("#g .game-card").on({
-				mousedown: function() {
+			$("#g .card").on({
+				mousedown: function () {
 					if ($("#g").attr("data-paused") == 1) {
 						return;
 					}
@@ -194,19 +194,19 @@ $(function() {
 						.find(".b")
 						.attr("data-f");
 
-					if ($("#g").find(".game-card.active").length > 1) {
-						setTimeout(function() {
+					if ($("#g").find(".card.active").length > 1) {
+						setTimeout(function () {
 							var thisCard = $("#g .active .b[data-f=" + data + "]");
 
 							if (thisCard.length > 1) {
 								thisCard
-									.parents(".game-card")
+									.parents(".card")
 									.toggleClass("active card found")
 									.empty(); //yey
 								increase("flip_matched");
 
 								// Win game
-								if (!$("#g .game-card").length) {
+								if (!$("#g .card").length) {
 									var time = $.now() - startGame;
 									if (
 										get("flip_" + difficulty) == "-:-" ||
@@ -218,7 +218,7 @@ $(function() {
 									startScreen("nice");
 								}
 							} else {
-								$("#g .game-card.active").removeClass("active"); // fail
+								$("#g .card.active").removeClass("active"); // fail
 								increase("flip_wrong");
 							}
 						}, 401);
@@ -234,7 +234,7 @@ $(function() {
 				})
 				.one(
 					"webkitAnimationEnd oanimationend msAnimationEnd animationend",
-					function(e) {
+					function (e) {
 						startScreen("fail"); // fail game
 					}
 				);
@@ -242,7 +242,7 @@ $(function() {
 			// Set keyboard (p)ause and [esc] actions
 			$(window)
 				.off()
-				.on("keyup", function(e) {
+				.on("keyup", function (e) {
 					// Pause game. (p)
 					if (e.keyCode == 80) {
 						if ($("#g").attr("data-paused") == 1) {
