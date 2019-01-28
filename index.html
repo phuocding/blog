@@ -1,254 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Start your development with a Blog integrated with Portfolio"
+    />
+    <meta name="author" content="Phuocding" />
+    <title>Ting Fu Happy New Year 2019</title>
+    <!-- Favicon -->
+    <link href="assets/img/brand/camcodo.png" rel="icon" type="image/jpg" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Start your development with a Blog integrated with Portfolio">
-  <meta name="author" content="Phuocding">
-  <title>Ting Fu</title>
-  <!-- Favicon -->
-  <link href="assets/img/brand/camcodo.png" rel="icon" type="image/jpg">
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link href="assets/vendor/nucleo/css/nucleo.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    <!-- Argon CSS -->
+    <link
+      type="text/css"
+      href="assets/css/argon.min.css?v=1.0.1"
+      rel="stylesheet"
+    />
+    <!--Sweet Alert 2-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/clock.css" />
+    <style>
+      @font-face {
+        font-family: myFirstFont;
+        src: url("assets/font/SansForgetica-Regular.otf");
+      }
+    </style>
+  </head>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <!-- Icons -->
-  <link href="assets/vendor/nucleo/css/nucleo.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-  <!-- Argon CSS -->
-  <link type="text/css" href="assets/css/argon.min.css?v=1.0.1" rel="stylesheet">
-  <!--Sweet Alert 2-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.min.css">
-  <style>
-    @font-face {
-      font-family: myFirstFont;
-      src: url("assets/font/SansForgetica-Regular.otf");
-    }
-  </style>
-</head>
-
-<body>
-  <header class="header-global">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
-      <div class="container">
-        <a class="navbar-brand mr-lg-5" href="https://phuocding.github.io" style="font-family: myFirstFont">
-          <img src="assets/img/brand/camcodo.png" title="Logo quả cam"> Ting Fu
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbar_global">
-          <div class="navbar-collapse-header">
-            <div class="row">
-              <div class="col-6 collapse-brand">
-                <a href="https://phuocding.github.io">
-                  <img src="assets/img/brand/camcodo.png" title="Logo quả cam"> Ting Fu
-                </a>
-              </div>
-              <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
-                  aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-            <li class="nav-item dropdown">
-              <a class="nav-link btn-dev" href="#" role="button">
-                <i class="ni ni-button-play"></i>
-                <span class="nav-link-inner--text">Thư giãn tý</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link btn-dev" href="#" role="button">
-                <i class="ni ni-trophy"></i>
-                <span class="nav-link-inner--text">Xôi xéo</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link btn-dev" href="#" role="button">
-                <i class="ni ni-user-run"></i>
-                <span class="nav-link-inner--text">Chim cút</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link btn-dev" href="#" role="button">
-                <i class="ni ni-world"></i>
-                <span class="nav-link-inner--text">About me</span>
-              </a>
-            </li>
-          </ul>
-          <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://plus.google.com/107137651608531099184" target="_blank"
-                data-toggle="tooltip" title="Discover LinkedIn" rel="noopener noreferrer">
-                <i class="fab fa-linkedin"></i>
-                <span class="nav-link-inner--text d-lg-none">LinkedIn</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://www.instagram.com/tingfu.om" target="_blank" data-toggle="tooltip"
-                title="Follow me on Instagram" rel="noopener noreferrer">
-                <i class="fab fa-instagram"></i>
-                <span class="nav-link-inner--text d-lg-none">Instagram</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://github.com/phuocding/phuocding.github.io" target="_blank"
-                data-toggle="tooltip" title="Star me on Github" rel="noopener noreferrer">
-                <i class="fab fa-github"></i>
-                <span class="nav-link-inner--text d-lg-none">Github</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="profile-page">
-    <section class="section-profile-cover section-shaped my-0">
-      <!-- Circles background -->
-      <div class="shape shape-style-1 shape-primary alpha-4">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <!-- SVG separator -->
-      <div class="separator separator-bottom separator-skew">
-        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-        </svg>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="card card-profile shadow mt--300">
-          <div class="px-4">
-            <div class="row justify-content-center">
-              <div class="col-lg-3 order-lg-2">
-                <div class="card-profile-image">
+  <body>
+    <header class="header-global">
+      <nav
+        id="navbar-main"
+        class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand mr-lg-5"
+            href="https://phuocding.github.io"
+            style="font-family: myFirstFont"
+          >
+            <img src="assets/img/brand/camcodo.png" /> Ting Fu
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar_global"
+            aria-controls="navbar_global"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbar_global">
+            <div class="navbar-collapse-header">
+              <div class="row">
+                <div class="col-6 collapse-brand">
                   <a href="https://phuocding.github.io">
-                    <img src="assets/img/theme/avatar.min.jpg" class="rounded-circle" title="Avatar">
+                    <img src="assets/img/brand/camcodo.png" /> Ting Fu
                   </a>
                 </div>
-              </div>
-              <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
-                <div class="card-profile-actions py-4 mt-lg-0">
-                  <a href="#" class="btn btn-sm btn-info mr-4">Connect</a>
-                  <a href="#" class="btn btn-sm btn-default float-right">Message</a>
-                </div>
-              </div>
-              <div class="col-lg-4 order-lg-1">
-                <div class="card-profile-stats d-flex justify-content-center">
-                  <div>
-                    <span class="heading">Dễ thương</span>
-                    <span class="description">Bland</span>
-                  </div>
-                  <div>
-                    <span class="heading">Dễ gần</span>
-                    <span class="description">Easy-going</span>
-                  </div>
+                <div class="col-6 collapse-close">
+                  <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-toggle="collapse"
+                    data-target="#navbar_global"
+                    aria-controls="navbar_global"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span></span> <span></span>
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="text-center mt-5">
-              <h3>Nguyễn Đình Phước
-                <span class="font-weight-light">, 23</span>
-              </h3>
-              <i style="font-size:15px; color: orangered">Phuoc Nguyen Dinh</i>
-              <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i>Hanoi, Vietnam</div>
-              <div class="h6 mt-4"><i class="ni business_briefcase-24 mr-2"></i>Developer - Build Future</div>
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+              <li class="nav-item dropdown">
+                <a class="nav-link btn-dev" href="#" role="button">
+                  <i class="ni ni-button-play"></i>
+                  <span class="nav-link-inner--text">Thư giãn tý</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link btn-dev" href="#" role="button">
+                  <i class="ni ni-trophy"></i>
+                  <span class="nav-link-inner--text">Xôi xéo</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link btn-dev" href="#" role="button">
+                  <i class="ni ni-user-run"></i>
+                  <span class="nav-link-inner--text">Chim cút</span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="./public/about.html" role="button">
+                  <i class="ni ni-world"></i>
+                  <span class="nav-link-inner--text">About me</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-icon"
+                  href="https://plus.google.com/107137651608531099184"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  title="Discover LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  <span class="nav-link-inner--text d-lg-none">LinkedIn</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-icon"
+                  href="https://www.instagram.com/tingfu.om"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  title="Follow me on Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                  <span class="nav-link-inner--text d-lg-none">Instagram</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-link-icon"
+                  href="https://github.com/phuocding/phuocding.github.io"
+                  target="_blank"
+                  data-toggle="tooltip"
+                  title="Star me on Github"
+                >
+                  <i class="fab fa-github"></i>
+                  <span class="nav-link-inner--text d-lg-none">Github</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="profile-page">
+      <section class="section">
+        <div id="scg-nyc-wrapper">
+          <div id="scg-nyc-msg" style="font-family: monospace;">
+            Chúc Mừng Năm Mới 2019
+          </div>
+          <div class="scg-nyc-digits-wrapper">
+            <div class="scg-nyc-digits-type">Days</div>
+            <div
+              class="scg-nyc-digit"
+              id="scg-clock-days"
+              style="color:#444444;"
+            >
+              <span>0</span><span>0</span><span>0</span>
             </div>
-            <div class="mt-5 py-5 border-top text-center">
-              <div class="row justify-content-center">
-                <div class="col-lg-9">
-                  <p>Cuộc phiêu lưu vào thế giới 4.0 của Tingfu. Cứ tiến hoặc lùi chứ đừng bao giờ dừng chân tại đâu đó
-                    quá lâu. Đi thật nhanh không bằng đi thật lâu dài, vì vậy đi theo team thì tốt hơn là đi một mình.</p>
-                  <a href="#" class="btn-dev">Show more</a>
-                </div>
-              </div>
+          </div>
+          <div class="scg-nyc-digits-wrapper scg-nyc-sep">:</div>
+          <div class="scg-nyc-digits-wrapper">
+            <div class="scg-nyc-digits-type">Hours</div>
+            <div class="scg-nyc-digit" id="scg-clock-hr" style="color:#444444;">
+              <span>0</span><span>0</span>
+            </div>
+          </div>
+          <div class="scg-nyc-digits-wrapper scg-nyc-sep">:</div>
+          <div class="scg-nyc-digits-wrapper">
+            <div class="scg-nyc-digits-type">Minutes</div>
+            <div
+              class="scg-nyc-digit"
+              id="scg-clock-mins"
+              style="color:#444444;"
+            >
+              <span>0</span><span>0</span>
+            </div>
+          </div>
+          <div class="scg-nyc-digits-wrapper scg-nyc-sep">:</div>
+          <div class="scg-nyc-digits-wrapper">
+            <div class="scg-nyc-digits-type">Seconds</div>
+            <div
+              class="scg-nyc-digit"
+              id="scg-clock-secs"
+              style="color:#444444;"
+            >
+              <span>0</span><span>0</span>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="row row-grid align-items-center mb-5">
-        <div class="col-lg-6">
-          <h4 class="mb-0 font-weight-light" style="font-family: myFirstFont">The man who never made mistakes never made anything.</h4>
-        </div>
-        <div class="col-lg-6 text-lg-center btn-wrapper">
-          <a target="_blank" href="https://plus.google.com/107137651608531099184" class="btn btn-neutral btn-icon-only btn-round btn-lg"
-            data-toggle="tooltip" data-original-title="Discover LinkedIn" rel="noopener noreferrer">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a class="btn btn-neutral btn-icon-only btn-instagram btn-round btn-lg" href="https://www.instagram.com/tingfu.om"
-            target="_blank" data-toggle="tooltip" title="Follow me on Instagram" rel="noopener noreferrer">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a target="_blank" href="https://github.com/phuocding/phuocding.github.io" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg"
-            data-toggle="tooltip" data-original-title="Star on Github" rel="noopener noreferrer">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-      <hr>
-      <div class="row align-items-center justify-content-md-between">
-        <div class="col-md-6">
-          <div class="copyright">
-            &copy; 2018
-            <a href="https://phuocding.github.io">Ting Fu</a>.
-          </div>
-        </div>
-        <div class="col-md-6">
-          <ul class="nav nav-footer justify-content-end">
-            <li class="nav-item">
-              <a href="#" class="nav-link btn-dev">Thư giãn tý</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link btn-dev">Xôi xéo</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link btn-dev">Chim cút</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link btn-dev">About me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Core -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="assets/vendor/popper/popper.min.js"></script>
-  <script type="text/javascript" src="assets/vendor/headroom/headroom.min.js"></script>
-  <script type="text/javascript" src="assets/vendor/bootstrap/bootstrap.min.js"></script>
-  <!-- Argon JS -->
-  <script type="text/javascript" src="assets/js/argon.min.js"></script>
-  <!--Sweet Alert 2-->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.all.min.js"></script>
-  <script type="text/javascript">
-    $('.btn-dev').click(function() {
-      swal({
-        position: 'top-end',
-        type: 'info',
-        title: 'Tính năng đang phát triển',
-        showConfirmButton: false,
-        timer: 2000
-      })
-    });
-  </script>
-</body>
 
+        <div
+          style="position:fixed;z-index:9999;bottom:-50px;left:0;width:100%;height:104px;background:url(https://3.bp.blogspot.com/-uQrQaR3IkxE/WF9dDUUVLLI/AAAAAAAAAdw/VKNA5q7FJSQX5OWofOiPafEEENaoBcY9wCLcB/s1600/nentet.png) repeat-x bottom left;"
+        ></div>
+        <img
+          style="position:fixed;z-index:9999;bottom:20px;left:20px"
+          src="http://3.bp.blogspot.com/-4Zt-ZB4tols/UsA_qIR0w9I/AAAAAAAAA3w/Ffyy-5OqGec/s320/banner_header.png"
+        />
+        <iframe
+          allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture"
+          allowfullscreen=""
+          frameborder=""
+          height="1"
+          src="https://www.youtube.com/embed/GfJCAZIbx5A?&autoplay=1&loop=1"
+          style="position:absolute;display:block;float:left;width:auto;bottom:999999999px"
+          width="1"
+        >
+        </iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row row-grid align-items-center mb-5">
+          <div class="col-lg-6">
+            <h4 class="mb-0 font-weight-light" style="font-family: myFirstFont">
+              The man who never made mistakes never made anything.
+            </h4>
+          </div>
+          <div class="col-lg-6 text-lg-center btn-wrapper">
+            <a
+              target="_blank"
+              href="https://plus.google.com/107137651608531099184"
+              class="btn btn-neutral btn-icon-only btn-round btn-lg"
+              data-toggle="tooltip"
+              data-original-title="Discover LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              class="btn btn-neutral btn-icon-only btn-instagram btn-round btn-lg"
+              href="https://www.instagram.com/tingfu.om"
+              target="_blank"
+              data-toggle="tooltip"
+              title="Follow me on Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/phuocding/phuocding.github.io"
+              class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg"
+              data-toggle="tooltip"
+              data-original-title="Star on Github"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <hr />
+        <div class="row align-items-center justify-content-md-between">
+          <div class="col-md-6">
+            <div class="copyright">
+              &copy; 2018 <a href="https://phuocding.github.io">Ting Fu</a>.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <ul class="nav nav-footer justify-content-end">
+              <li class="nav-item">
+                <a href="#" class="nav-link btn-dev">Thư giãn tý</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link btn-dev">Xôi xéo</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link btn-dev">Chim cút</a>
+              </li>
+              <li class="nav-item">
+                <a href="./public/about.html" class="nav-link">About me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Core -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <script src="assets/vendor/headroom/headroom.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- Argon JS -->
+    <script src="assets/js/argon.min.js"></script>
+    <!--Sweet Alert 2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.28.4/dist/sweetalert2.all.min.js"></script>
+    <script>
+      $(".btn-dev").click(function() {
+        swal({
+          position: "top-end",
+          type: "info",
+          title: "Tính năng đang phát triển",
+          showConfirmButton: false,
+          timer: 2000
+        });
+      });
+    </script>
+    <script src="./assets/js/newYearEve.js" type="text/JavaScript"></script>
+    <script src="./assets/js/fw.js" type="text/javascript"></script>
+  </body>
 </html>
