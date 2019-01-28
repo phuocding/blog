@@ -1,4 +1,4 @@
-﻿#scg-nyc-wrapper{color:white;font-size:55px;line-height:normal;text-align:center;cursor:pointer;padding:20px;margin-top:210px;}
+﻿#scg-nyc-wrapper{color:white;font-size:55px;line-height:normal;text-align:center;cursor:pointer;padding:20px;margin-top:210px;pointer-events: none}
 .scg-nyc-digits-wrapper{display:inline-block;vertical-align:bottom}
 .scg-nyc-digits-type{font-size:13px}
 .scg-nyc-digit > span{background:#fff none repeat scroll 0 0;border:1px solid rgba(0,0,0,0.1);border-radius:5px;box-shadow:1px 1px 1px #d1c1c1;display:inline-block;padding:2px 7px;margin:0 1px}
