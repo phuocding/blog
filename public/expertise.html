@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cháo lươn</title>
+    <style>
+      nav ul {
+        list-style: none;
+        overflow: hidden;
+        position: relative;
+      }
+      nav ul li {
+        float: left;
+        margin: 0 20px 0 0;
+      }
+      nav ul li a {
+        display: block;
+        width: 120px;
+        height: 120px;
+      }
+      nav ul li:nth-child(1) a {
+        background-color: #4285f4;
+        background-position: 28px 28px;
+      }
+      nav ul li:nth-child(2) a {
+        background-color: #ea4335;
+        background-position: 28px -96px;
+        background-image: url(../assets/icons/gmo.png);
+        background-repeat: no-repeat;     
+      }
+      nav ul li:nth-child(3) a {
+        background-color: #fbbc05;
+        background-position: 28px -222px;
+      }
+      nav ul li:nth-child(4) a {
+        background-color: #4285f4;
+        background-position: 28px -342px;
+      }
+      nav ul li:nth-child(5) a {
+        background-color: #34a853;
+        background-position: 28px -464px;
+      }
+      nav ul li a span {
+        font: 50px "Dosis", sans-serif;
+        text-transform: uppercase;
+        position: absolute;
+        left: 580px;
+        top: 29px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo">
+      <nav>
+        <ul>
+          <li>
+            <a href="#"><span>Nhà chính</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Xôi xéo</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Chim cút</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Thư giãn tý</span></a>
+          </li>
+          <li>
+            <a href="#"><span>Phước Phước</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
 </html>
