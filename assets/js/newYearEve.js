@@ -1,5 +1,5 @@
 ﻿function startTimer() {
-    var newyr=new Date("February 5, 2019 00:00:00");
+    var newyr=new Date("March 2, 2020 00:00:00");
     var newyeartime=newyr.getTime();
     var todaytm=new Date();
     var todaytime=todaytm.getTime();
@@ -9,7 +9,7 @@
     var leftmin=59-todaytm.getMinutes();
     var leftsec=59-todaytm.getSeconds();
     if (Math.floor(leftdays) <= -1) {
-        document.getElementById('scg-nyc-msg').innerHTML="It's New Year Time, Friends!<br/>Happy New Year 2019";
+        document.getElementById('scg-nyc-msg').innerHTML="Happy Birthday Phước";
         return;
     } else {
         document.getElementById('scg-clock-days').innerHTML= scgWrapChars(Math.floor(leftdays), -3);
