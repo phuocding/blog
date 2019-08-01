@@ -2,7 +2,7 @@
 
 ### What's news?
 1. Have latest nothing.
-2. Anyway, anyone else are curious about me? click [here for any your curiority](https://phuocding.design).
+2. Anyway, anyone else are curious about me? click [here for any your curiority](https://phuocding.design/plog).
 3. Maybe a portfolio.
 4. For interest, like a notebook or daily note.
 
