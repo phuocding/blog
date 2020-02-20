@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-blog-github/static/css/main.397973bc.chunk.css",
+    "main.js": "/react-blog-github/static/js/main.6190e870.chunk.js",
+    "main.js.map": "/react-blog-github/static/js/main.6190e870.chunk.js.map",
+    "runtime-main.js": "/react-blog-github/static/js/runtime-main.4a3b424b.js",
+    "runtime-main.js.map": "/react-blog-github/static/js/runtime-main.4a3b424b.js.map",
+    "static/js/2.dfb52223.chunk.js": "/react-blog-github/static/js/2.dfb52223.chunk.js",
+    "static/js/2.dfb52223.chunk.js.map": "/react-blog-github/static/js/2.dfb52223.chunk.js.map",
+    "index.html": "/react-blog-github/index.html",
+    "precache-manifest.3f3deb391b963275493616f3ebf22ea9.js": "/react-blog-github/precache-manifest.3f3deb391b963275493616f3ebf22ea9.js",
+    "service-worker.js": "/react-blog-github/service-worker.js",
+    "static/css/main.397973bc.chunk.css.map": "/react-blog-github/static/css/main.397973bc.chunk.css.map",
+    "static/js/2.dfb52223.chunk.js.LICENSE": "/react-blog-github/static/js/2.dfb52223.chunk.js.LICENSE",
+    "static/media/logo.svg": "/react-blog-github/static/media/logo.048f9aa6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4a3b424b.js",
+    "static/js/2.dfb52223.chunk.js",
+    "static/css/main.397973bc.chunk.css",
+    "static/js/main.6190e870.chunk.js"
+  ]
+}
