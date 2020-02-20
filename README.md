@@ -1,4 +1,4 @@
-# Tingfu Blog
+# Tingfu Blog (version 2.0)
 
 ### What's news?
 1. Have latest nothing.
@@ -16,5 +16,4 @@
   - Friends.
   - What's interesting in Hanoi?
   
-  ### > This website is built by Gatsby - Blazing fast modern site generator for React. 
-  Go beyond static sites: build blogs, ecommerce sites, full-blown apps, and more with [Gatsby](https://www.gatsbyjs.org/).
+  ### > This website is built by `React`
