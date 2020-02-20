@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-blog-github/static/css/main.397973bc.chunk.css",
-    "main.js": "/react-blog-github/static/js/main.6190e870.chunk.js",
-    "main.js.map": "/react-blog-github/static/js/main.6190e870.chunk.js.map",
-    "runtime-main.js": "/react-blog-github/static/js/runtime-main.4a3b424b.js",
-    "runtime-main.js.map": "/react-blog-github/static/js/runtime-main.4a3b424b.js.map",
-    "static/js/2.dfb52223.chunk.js": "/react-blog-github/static/js/2.dfb52223.chunk.js",
-    "static/js/2.dfb52223.chunk.js.map": "/react-blog-github/static/js/2.dfb52223.chunk.js.map",
-    "index.html": "/react-blog-github/index.html",
-    "precache-manifest.3f3deb391b963275493616f3ebf22ea9.js": "/react-blog-github/precache-manifest.3f3deb391b963275493616f3ebf22ea9.js",
-    "service-worker.js": "/react-blog-github/service-worker.js",
-    "static/css/main.397973bc.chunk.css.map": "/react-blog-github/static/css/main.397973bc.chunk.css.map",
-    "static/js/2.dfb52223.chunk.js.LICENSE": "/react-blog-github/static/js/2.dfb52223.chunk.js.LICENSE",
-    "static/media/logo.svg": "/react-blog-github/static/media/logo.048f9aa6.svg"
+    "main.css": "/phuocding.github.io/static/css/main.397973bc.chunk.css",
+    "main.js": "/phuocding.github.io/static/js/main.7eb70d67.chunk.js",
+    "main.js.map": "/phuocding.github.io/static/js/main.7eb70d67.chunk.js.map",
+    "runtime-main.js": "/phuocding.github.io/static/js/runtime-main.aa34249e.js",
+    "runtime-main.js.map": "/phuocding.github.io/static/js/runtime-main.aa34249e.js.map",
+    "static/js/2.dfb52223.chunk.js": "/phuocding.github.io/static/js/2.dfb52223.chunk.js",
+    "static/js/2.dfb52223.chunk.js.map": "/phuocding.github.io/static/js/2.dfb52223.chunk.js.map",
+    "index.html": "/phuocding.github.io/index.html",
+    "precache-manifest.0dd34ac094f7c68cc1e55c297e07f58b.js": "/phuocding.github.io/precache-manifest.0dd34ac094f7c68cc1e55c297e07f58b.js",
+    "service-worker.js": "/phuocding.github.io/service-worker.js",
+    "static/css/main.397973bc.chunk.css.map": "/phuocding.github.io/static/css/main.397973bc.chunk.css.map",
+    "static/js/2.dfb52223.chunk.js.LICENSE": "/phuocding.github.io/static/js/2.dfb52223.chunk.js.LICENSE",
+    "static/media/logo.svg": "/phuocding.github.io/static/media/logo.048f9aa6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4a3b424b.js",
+    "static/js/runtime-main.aa34249e.js",
     "static/js/2.dfb52223.chunk.js",
     "static/css/main.397973bc.chunk.css",
-    "static/js/main.6190e870.chunk.js"
+    "static/js/main.7eb70d67.chunk.js"
   ]
 }
