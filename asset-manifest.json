@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/phuocding.github.io/static/css/main.397973bc.chunk.css",
-    "main.js": "/phuocding.github.io/static/js/main.7eb70d67.chunk.js",
-    "main.js.map": "/phuocding.github.io/static/js/main.7eb70d67.chunk.js.map",
-    "runtime-main.js": "/phuocding.github.io/static/js/runtime-main.aa34249e.js",
-    "runtime-main.js.map": "/phuocding.github.io/static/js/runtime-main.aa34249e.js.map",
-    "static/js/2.dfb52223.chunk.js": "/phuocding.github.io/static/js/2.dfb52223.chunk.js",
-    "static/js/2.dfb52223.chunk.js.map": "/phuocding.github.io/static/js/2.dfb52223.chunk.js.map",
-    "index.html": "/phuocding.github.io/index.html",
-    "precache-manifest.0dd34ac094f7c68cc1e55c297e07f58b.js": "/phuocding.github.io/precache-manifest.0dd34ac094f7c68cc1e55c297e07f58b.js",
-    "service-worker.js": "/phuocding.github.io/service-worker.js",
-    "static/css/main.397973bc.chunk.css.map": "/phuocding.github.io/static/css/main.397973bc.chunk.css.map",
-    "static/js/2.dfb52223.chunk.js.LICENSE": "/phuocding.github.io/static/js/2.dfb52223.chunk.js.LICENSE",
-    "static/media/logo.svg": "/phuocding.github.io/static/media/logo.048f9aa6.svg"
+    "main.css": "/blog/static/css/main.397973bc.chunk.css",
+    "main.js": "/blog/static/js/main.f96b853a.chunk.js",
+    "main.js.map": "/blog/static/js/main.f96b853a.chunk.js.map",
+    "runtime-main.js": "/blog/static/js/runtime-main.48d622bb.js",
+    "runtime-main.js.map": "/blog/static/js/runtime-main.48d622bb.js.map",
+    "static/js/2.dfb52223.chunk.js": "/blog/static/js/2.dfb52223.chunk.js",
+    "static/js/2.dfb52223.chunk.js.map": "/blog/static/js/2.dfb52223.chunk.js.map",
+    "index.html": "/blog/index.html",
+    "precache-manifest.78879ffaf3edf159d507d2a3c07b0a75.js": "/blog/precache-manifest.78879ffaf3edf159d507d2a3c07b0a75.js",
+    "service-worker.js": "/blog/service-worker.js",
+    "static/css/main.397973bc.chunk.css.map": "/blog/static/css/main.397973bc.chunk.css.map",
+    "static/js/2.dfb52223.chunk.js.LICENSE": "/blog/static/js/2.dfb52223.chunk.js.LICENSE",
+    "static/media/logo.svg": "/blog/static/media/logo.048f9aa6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa34249e.js",
+    "static/js/runtime-main.48d622bb.js",
     "static/js/2.dfb52223.chunk.js",
     "static/css/main.397973bc.chunk.css",
-    "static/js/main.7eb70d67.chunk.js"
+    "static/js/main.f96b853a.chunk.js"
   ]
 }
